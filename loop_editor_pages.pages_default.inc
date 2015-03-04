@@ -32,10 +32,12 @@ function loop_editor_pages_default_page_manager_pages() {
       ),
     ),
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array(
     'type' => 'normal',
-    'title' => 'Dashboard',
+    'title' => t('Dashboard'),
     'name' => 'menu-loop-primary-menu',
     'weight' => '0',
     'parent' => array(
@@ -83,20 +85,17 @@ function loop_editor_pages_default_page_manager_pages() {
   );
   $display->cache = array();
   $display->title = 'Dashboard';
+  $display->uuid = '5c4610bd-d98d-4392-833f-1c60080f8cba';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-1';
+    $pane->pid = 'new-150e7490-581d-4d5a-80e7-e7acdbb8bdb7';
     $pane->panel = 'alpha';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'loop_editor_content-panel_pane_1';
+    $pane->type = 'block';
+    $pane->subtype = 'loop_editor_pages-loop_dashboard_questions';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'use_pager' => 0,
-      'pager_id' => '0',
-      'items_per_page' => '10',
-      'offset' => '0',
       'override_title' => 0,
       'override_title_text' => '',
     );
@@ -108,20 +107,17 @@ function loop_editor_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['alpha'][0] = 'new-1';
+    $pane->uuid = '150e7490-581d-4d5a-80e7-e7acdbb8bdb7';
+    $display->content['new-150e7490-581d-4d5a-80e7-e7acdbb8bdb7'] = $pane;
+    $display->panels['alpha'][0] = 'new-150e7490-581d-4d5a-80e7-e7acdbb8bdb7';
     $pane = new stdClass();
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-fabae8f8-da05-4cd3-90ff-b24e0ae98979';
     $pane->panel = 'beta';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'loop_editor_content-panel_pane_3';
+    $pane->type = 'block';
+    $pane->subtype = 'loop_editor_pages-loop_dashboard_comments';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'use_pager' => 0,
-      'pager_id' => '0',
-      'items_per_page' => '10',
-      'offset' => '0',
       'override_title' => 0,
       'override_title_text' => '',
     );
@@ -133,47 +129,19 @@ function loop_editor_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['beta'][0] = 'new-2';
+    $pane->uuid = 'fabae8f8-da05-4cd3-90ff-b24e0ae98979';
+    $display->content['new-fabae8f8-da05-4cd3-90ff-b24e0ae98979'] = $pane;
+    $display->panels['beta'][0] = 'new-fabae8f8-da05-4cd3-90ff-b24e0ae98979';
     $pane = new stdClass();
-    $pane->pid = 'new-3';
-    $pane->panel = 'delta';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'loop_editor_users-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'use_pager' => 0,
-      'pager_id' => '0',
-      'items_per_page' => '10',
-      'offset' => '0',
-      'override_title' => 0,
-      'override_title_text' => 'Latest users',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['delta'][0] = 'new-3';
-    $pane = new stdClass();
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-aaff6e5e-6bc6-41f2-89e4-d988a495466a';
     $pane->panel = 'gamma';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'loop_editor_comments-panel_pane_1';
+    $pane->type = 'block';
+    $pane->subtype = 'loop_editor_pages-loop_dashboard_other_content';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'use_pager' => 0,
-      'pager_id' => '0',
-      'items_per_page' => '5',
-      'offset' => '0',
-      'override_title' => 1,
-      'override_title_text' => 'Latest comments',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -183,8 +151,9 @@ function loop_editor_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['gamma'][0] = 'new-4';
+    $pane->uuid = 'aaff6e5e-6bc6-41f2-89e4-d988a495466a';
+    $display->content['new-aaff6e5e-6bc6-41f2-89e4-d988a495466a'] = $pane;
+    $display->panels['gamma'][0] = 'new-aaff6e5e-6bc6-41f2-89e4-d988a495466a';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
